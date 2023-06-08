@@ -1,0 +1,6 @@
+[submodule "typst-physics"]
+	path = typst-physics
+	url = https://github.com/Leedehai/typst-physics.git
+[submodule "typst-tablex"]
+	path = typst-tablex
+	url = https://github.com/PgBiel/typst-tablex.git
