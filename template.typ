@@ -10,7 +10,7 @@
   /// Set the document's basic properties.
   set document(author: author.name)
   set page(numbering: "1", number-align: center)
-  set text(text_size, font: ("Linux Libertine", "Yu Mincho", "YuMincho", "細明朝体"), lang: lang)
+  set text(text_size, font: ("Linux Libertine", "Yu Mincho", "YuMincho", "細明朝体", "Noto Serif CJK JP"), lang: lang)
 
   /// Transvert yyyy/mm/dd to english text of a date
   /// should be replace with use the official implementation after the v0.5 release
