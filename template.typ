@@ -9,7 +9,6 @@
 
   /// Set the document's basic properties.
   set document(author: author.name)
-  set page(numbering: "1", number-align: center)
   set text(text_size, font: ("Linux Libertine", "Yu Mincho", "YuMincho", "細明朝体", "Noto Serif CJK JP"), lang: lang)
 
   /// formatted data
