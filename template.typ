@@ -12,6 +12,19 @@
   set page(numbering: "1", number-align: center)
   set text(text_size, font: ("Linux Libertine", "Yu Mincho", "YuMincho", "細明朝体", "Noto Serif CJK JP"), lang: lang)
 
+  /// formatted data
+  let date = {
+    let day = date.day()
+    let suffix = super(
+      if day == 1 or day == 21 or day == 31 {"st"}
+      else if day == 2 or day == 22 {"nd"} 
+      else if day == 3 or day == 23 {"rd"}
+      else {"th"}
+    )
+    
+    [#date.display("[month repr:long] [day]")#suffix,\ #date.year()]
+  }
+
   /// Print the title table fitting the given format
   {
     set text(9pt)
@@ -19,7 +32,7 @@
       columns: (auto, 1fr, auto),
       stroke: .5pt,
       align: center + horizon,
-      rowspanx(2, affiliation), title.ja, rowspanx(2, [#date.display("[month repr:long] [day], [year]") \ #lab\ #author.name (#author.grade)]),
+      rowspanx(2, affiliation), title.ja, rowspanx(2, [#date \ #lab\ #author.name (#author.grade)]),
       (), title.en, ()
     )
   }
