@@ -4,11 +4,15 @@
 #show : project.with(
     title: (
         // JPN title
-        ja: [ここには日本語のタイトルを入力してくださいここには日本語のタイトルを入力してくださいここには日本語のタイトルを入力してください\ (ここには日本語のサブタイトルを入力してくださいここには日本語のサブタイトルを入力してください)],
-
+        ja: [
+          ここには日本語のタイトルを入力してくださいここには日本語のタイトルを入力してくださいここには日本語のタイトルを入力してください\ 
+          (ここには日本語のサブタイトルを入力してくださいここには日本語のサブタイトルを入力してください)
+        ],
         // ENG title
-        en: text(10.5pt)[Please put the English title of your resume here, Please put the English title of your resume here, Please put the English title of your resume here\ ] + [(Please put the English subtitle of your resume here, Please put the English subtitle of your resume here)]
-
+        en: [
+          Please put the English title of your resume here, Please put the English title of your resume here, Please put the English title of your resume here\ 
+          (Please put the English subtitle of your resume here, Please put the English subtitle of your resume here)
+        ],
     ),
     // author information
     author: (name: "Your Name", grade: "M1"),
@@ -22,9 +26,10 @@
       and Miyamoto Lab.\ 
       Research Report No.1
     ],
+    // your labotory
     lab: "Uenohara Lab.",
-    // date format: (year, month, day)
-    date: (1999,10,14)
+    // report date
+    date: datetime(year: 1999, month: 10, day: 14)
 )
 
 // Use `#Abstract` to print the title for abstract, Don't use `= Abstract` because of wrong numbering  
